@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Backtracking practice 1
+          Backtracking practice 2
         </a>
       </header>
     </div>
