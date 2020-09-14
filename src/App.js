@@ -18,6 +18,8 @@ function App() {
         >
           Backtracking practice 1
           Backtracking practice 2
+          Backtracking practice 5
+          Backtracking practice 6
         </a>
       </header>
     </div>
