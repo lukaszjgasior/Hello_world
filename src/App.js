@@ -18,6 +18,7 @@ function App() {
         >
           Branch test 1
           Merge test 1
+          Merge test 2
         </a>
       </header>
     </div>
