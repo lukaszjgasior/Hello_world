@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Branch test 1
+          Merge test 1
         </a>
       </header>
     </div>
