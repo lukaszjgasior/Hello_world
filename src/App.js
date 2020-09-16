@@ -17,6 +17,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Branch test 1
+          Merge test 1
+          Merge test 2 - This is originally in branch mergetest2, will try to merge this into merge test
         </a>
       </header>
     </div>
