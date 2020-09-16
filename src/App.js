@@ -16,10 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Backtracking practice 1
-          Backtracking practice 2
-          Backtracking practice 5
-          Backtracking practice 6
+          Branch test 1
         </a>
       </header>
     </div>
