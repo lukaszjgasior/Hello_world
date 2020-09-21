@@ -1,27 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Temperature } from "./Temperature";
 
 function App() {
-  const myText="Test JS";
-  console.log(myText.toUpperCase());
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. {myText.toUpperCase()+1}
-        </p>
+        <Temperature></Temperature>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Backtracking practice 1
-          Backtracking practice 2
-          Backtracking practice 5
-          Backtracking practice 6
+          TEXT
         </a>
       </header>
     </div>
