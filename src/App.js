@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Temperature } from "./Temperature";
 import { MyAge } from "./MyAge";
+import { MagicEightBall } from "./MagicEightBall";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Temperature></Temperature>
         <MyAge></MyAge>
+        <MagicEightBall></MagicEightBall>
         <a
           className="App-link"
           href="https://reactjs.org"
