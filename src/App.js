@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Temperature></Temperature>
-        <MyAge></MyAge>
-        <MagicEightBall></MagicEightBall>
-        <RaceDay></RaceDay>
+        <Temperature />
+        <MyAge />
+        <MagicEightBall />
+        <RaceDay />
         <a
           className="App-link"
           href="https://reactjs.org"
