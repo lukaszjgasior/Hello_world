@@ -26,11 +26,25 @@ export function RockPaperScissors() {
     const determineWinner = (userChoice, computerChoice) => {
         if (userChoice === computerChoice) {
             return 'Tie';
-        } else if {
-            if (userChoice === 'rock' && computerChoice === "paper") {
-                return 'Computer wins';
-            } else {
-                return 'User wins';
+        } else {
+            if (userChoice === 'rock') {
+                if (computerChoice === 'paper') {
+                    return 'Computer wins';
+                } else {
+                    return 'User wins';
+                }
+            } else if (userChoice === 'paper') {
+                if (computerChoice === 'scissors') {
+                    return 'Computer wins';
+                } else {
+                    return 'User wins';
+                }
+            } else if (userChoice === 'scissors') {
+                if (computerChoice === 'rock') {
+                    return 'Computer wins';
+                } else {
+                    return 'User wins';
+                }
             }
         }
     }
