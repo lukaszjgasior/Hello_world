@@ -3,7 +3,7 @@ import React from "react";
 export function RockPaperScissors() {
     const getUserChoice = userInput => {
         userInput = userInput.toLowerCase();
-        if (userInput === 'rock' || userInput==='paper' || userInput==='scissors') {
+        if (userInput === 'rock' || userInput==='paper' || userInput==='scissors' || userInput==='bomb') {
             return userInput;
         } else {
             console.log('Error!');
@@ -24,7 +24,9 @@ export function RockPaperScissors() {
         }
     }
     const determineWinner = (userChoice, computerChoice) => {
-        if (userChoice === computerChoice) {
+         if (userChoice === 'bomb') {
+             return 'BOOM! Instant win!'
+         } else if (userChoice === computerChoice) {
             return 'Tie';
         } else {
             if (userChoice === 'rock') {
@@ -48,4 +50,13 @@ export function RockPaperScissors() {
             }
         }
     }
+    const playGame = () => {
+        let userChoice = getUserChoice('rock');
+        let computerChoice = getComputerChoice();
+        console.log('You threw ' + userChoice);
+        console.log('Computer threw ' + computerChoice);
+        console.log(determineWinner(userChoice, computerChoice));
+    }
+
+    playGame();
 }
