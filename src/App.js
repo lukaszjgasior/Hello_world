@@ -5,6 +5,7 @@ import { Temperature } from "./Temperature";
 import { MyAge } from "./MyAge";
 import { MagicEightBall } from "./MagicEightBall";
 import { RaceDay } from "./RaceDay";
+import { RockPaperScissors} from "./RockPaperScissors";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <MyAge />
         <MagicEightBall />
         <RaceDay />
+        <RockPaperScissors />
         <a
           className="App-link"
           href="https://reactjs.org"
