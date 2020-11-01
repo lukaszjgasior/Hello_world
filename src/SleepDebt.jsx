@@ -38,17 +38,16 @@ export function SleepDebt() {
     const actualSleepHours = getActualSleepHours();
     const idealSleepHours = getIdealSleepHours();
     if (actualSleepHours === idealSleepHours) {
-      console.log("Perfect amount of sleep!");
+      return "Perfect amount of sleep!";
     } else if (actualSleepHours > idealSleepHours) {
-      console.log(
+      return (
         "You got" +
-          (actualSleepHours - idealSleepHours) +
-          " more than you need."
+        (actualSleepHours - idealSleepHours) +
+        " more than you need."
       );
     } else if (actualSleepHours < idealSleepHours) {
-      console.log(
-        "You need " + (idealSleepHours - actualSleepHours) + " more."
-      );
+      return "You need " + (idealSleepHours - actualSleepHours) + " more.";
     }
   };
+  calculateSleepDebt();
 }
