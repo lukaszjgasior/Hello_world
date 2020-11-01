@@ -21,14 +21,17 @@ export function SleepDebt() {
         break;
     }
   };
-  const getActualSleepHours = () =>
-    getSleepHours("monday") +
-    getSleepHours("tuesday") +
-    getSleepHours("wednsday") +
-    getSleepHours("thursday") +
-    getSleepHours("friday") +
-    getSleepHours("saturday") +
-    getSleepHours("sunday");
+  const getActualSleepHours = () => {
+    let actualSleepHours =
+      getSleepHours("monday") +
+      getSleepHours("tuesday") +
+      getSleepHours("wednsday") +
+      getSleepHours("thursday") +
+      getSleepHours("friday") +
+      getSleepHours("saturday") +
+      getSleepHours("sunday");
+    return actualSleepHours;
+  };
 
   const getIdealSleepHours = () => {
     let idealHours = 9;
@@ -50,4 +53,10 @@ export function SleepDebt() {
     }
   };
   calculateSleepDebt();
+  return (
+    <p>
+      You got {getActualSleepHours()} hours of sleep and needed{" "}
+      {getIdealSleepHours()}.
+    </p>
+  );
 }
